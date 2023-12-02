@@ -53,25 +53,19 @@ section {
 }
 
 .logo img {
-  width: 156px;
-  height: 156px;
+  width: clamp(3.929rem, 2.1877rem + 8.7066vw, 11.143rem);
+  height: clamp(3.929rem, 2.1877rem + 8.7066vw, 11.143rem);
   border-radius: 100%;
-}
-@media (max-width: 468px) {
-  .logo img {
-    width: 85px;
-    height: 85px;
-  }
 }
 
 .tel {
-  font-size: clamp(1.143rem, 0.9669rem + 0.6573vw, 1.643rem);
+  font-size: clamp(0.8rem, 0.7567rem + 0.8617vw, 1.643rem);
   margin-bottom: 18px;
   color: var(--accent_color);
 }
 
 .address {
-  font-size: clamp(1rem, 0.8489rem + 0.5639vw, 1.429rem);
+  font-size: clamp(0.7rem, 0.8489rem + 0.5639vw, 1.429rem);
 }
 
 .header {
@@ -79,7 +73,7 @@ section {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 62px 0;
+  padding: clamp(2.286rem, 1.7687rem + 2.5864vw, 4.429rem) 0;
   color: #fff;
   z-index: 10000000;
 }
