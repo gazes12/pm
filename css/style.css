@@ -27,7 +27,7 @@ section {
 .title {
   font-size: clamp(1.1rem, 0.331rem + 3.8452vw, 3rem);
   text-align: center;
-  margin-bottom: 140px;
+  /*     margin-bottom: 140px; */
   font-weight: 700;
 }
 
@@ -76,6 +76,23 @@ section {
   padding: clamp(2.286rem, 1.7687rem + 2.5864vw, 4.429rem) 0;
   color: #fff;
   z-index: 10000000;
+}
+.header.sticky {
+  padding: 1.5rem 0;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+.header.sticky .logo img {
+  width: clamp(3rem, 2.2759rem + 3.6207vw, 6rem);
+  height: clamp(3rem, 2.2759rem + 3.6207vw, 6rem);
+}
+.header.sticky .logo__name {
+  visibility: hidden;
+  opacity: 0;
+}
+.header.sticky .contacts {
+  visibility: hidden;
+  opacity: 0;
 }
 
 .logo__name {
