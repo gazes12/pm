@@ -9,8 +9,8 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 
 if(localStorage.getItem('clue') != 'none'){    
     if(device == 'pc'){
-        $('.clue--pc').removeClass('hidden');
+        $('.clue-mouse').removeClass('hidden');
     }else{
-        $('.clue--mobile').removeClass('hidden');
+        $('.clue-swipe').removeClass('hidden');
     }
 }

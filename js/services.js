@@ -3,7 +3,7 @@ function svgToBase64Url(svgString, width, height) {
     return `url('data:image/svg+xml;base64,${base64SVG}')`;
 }
 
-$('.hero-circle').css('cursor', `${svgToBase64Url(`<circle cx="30" cy="30" r="30" fill='rgba(0,0,0,0.8)'/>`, 100, 100)}, auto`);
+$('.service').css('cursor', `${svgToBase64Url(`<circle cx="30" cy="30" r="30" fill='rgba(0,0,0,0.8)'/>`, 100, 100)}, auto`);
 
 
 
@@ -58,17 +58,17 @@ let direction = null;
 function mouseWheelMobile() {
     let event = null;
 
-    $('.hero-circle').bind('touchstart DOMMouseScroll', function (e) { return false; });
-    $('.hero-circle').bind('touchmove DOMMouseScroll', function (e) { return false; });
-    $('.hero-circle').bind('touched DOMMouseScroll', function (e) { return false; });
+    $('.service').bind('touchstart DOMMouseScroll', function (e) { return false; });
+    $('.service').bind('touchmove DOMMouseScroll', function (e) { return false; });
+    $('.service').bind('touched DOMMouseScroll', function (e) { return false; });
 
 
-    $('.hero-circle').on('touchstart', function (e) {
+    $('.service').on('touchstart', function (e) {
         event = e;
     });
 
 
-    $('.hero-circle').on('touchmove', function (e) {
+    $('.service').on('touchmove', function (e) {
         if (event) {
             direction = e.touches[0].pageX - event.touches[0].pageX < 0 ? 'up' : 'down';
             set_progress();
@@ -76,15 +76,15 @@ function mouseWheelMobile() {
     });
 
 
-    $('.hero-circle').on('touched', function (e) {
+    $('.service').on('touched', function (e) {
         event = null;
     });
 }
 
 
 function mouseWheelPc() {
-    $('.hero-circle').bind('mousewheel DOMMouseScroll', function (e) { return false; });
-    $('.hero-circle').bind('mousewheel', function(e){
+    $('.service').bind('mousewheel DOMMouseScroll', function (e) { return false; });
+    $('.service').bind('mousewheel', function(e){
         direction = e.originalEvent.deltaY > 0 ? 'down' : 'up';
 
         set_progress();
@@ -93,7 +93,7 @@ function mouseWheelPc() {
 
 
 
-let progress = $('.hero-circle__progress circle');
+let progress = $('.service__progress circle');
 let progress__array = progress[0].getTotalLength();
 progress.css('--hero-progress_array', progress__array);
 
@@ -104,7 +104,7 @@ let border_del = device == 'mobile' ? border_end_point / 10 : border_end_point /
 let border_offset = 0;
 
 let indexSlide = 0;
-let maxIndexSlide = $('.hero-circle').length - 1;
+let maxIndexSlide = $('.service').length - 1;
 let minIndexSlide = 0;
 
 if (localStorage.getItem('clue') == 'none') {
@@ -153,13 +153,13 @@ function set_progress(){
 
 
 function setSlide() {
-    $.each($('.hero-circle'), function () {
+    $.each($('.service'), function () {
         $(this).removeClass('visible');
     });
 
-    $('.hero-circle').eq(indexSlide).addClass('visible');
-    $('.hero').attr('theme', indexSlide);
+    $('.service').eq(indexSlide).addClass('visible');
+/*     $('.hero').attr('theme', indexSlide);
 
     $('.hero__icon').removeClass('visible');
-    $(`.hero__icon[indexSlide=${indexSlide}]`).addClass('visible')
+    $(`.hero__icon[indexSlide=${indexSlide}]`).addClass('visible') */
 }

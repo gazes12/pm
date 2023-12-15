@@ -1,352 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/reset.css">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/custom.css">
 	<link rel="stylesheet" href="css/variables.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/hero.css">
-	<link rel="stylesheet" href="css/reviews.css">
+	<link rel="stylesheet" href="css/theme-basic.css" />
 </head>
-
 <body>
 
 
-
-	<header class="header">
+	<div class="header">
 		<div class="container">
-			<div class="row justify-content-between align-items-center">
-				<div class="col-md-5 col-4">
+			<div class="row align-items-center">
+				<div class="col-2 col-sm-3 col-md-5">
 					<div class="logo d-flex align-items-center">
-						<img src="img/logo.png" alt="Логотип">
-						<h1 class="logo__name mx-5 d-none d-md-block">ПАРИКХМАХЕР & <br>МАНИКЮРИСТ</h1>
+						<div class="logo__image">
+							<img src="img/logo.png" alt="Логотип">
+						</div>
+						<h1 class="logo__name d-none d-md-block">ПАРИКХМАХЕР & <br>МАНИКЮРИСТ</h1>
 					</div>
 				</div>
-				<div class="col-8 col-md-4 ml-auto">
+
+				<div class="col-8 col-md-5 ms-auto">
 					<div class="contacts text-end">
-						<a href="#" class="tel">+79900000000</a>
+						<a href="tel:79900000000" class="tel">+79900000000</a>
 						<address class="address">г. Мелитополь, Фрунзе 269.</address>
 					</div>
 				</div>
 			</div>
 		</div>
-	</header>
+	</div>
 
 
-	<section class="hero">
-		<div class="hero__wrapper">
-			<div class="hero-circle visible">
-				<svg viewBox="0 0 120 120" class="hero-circle__progress">
-					<circle cx="60" cy="60" r="54" fill="none" stroke="url(#hero-circle__gradient2)" stroke-width="3" />
-					<linearGradient spreadMethod="pad" id="hero-circle__gradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+	<main class="main">
+		<section class="services">
+			<div class="services__wrapper">
+				<div class="service visible service--brush">
+					<svg viewBox="0 0 120 120" class="service__progress">
+						<circle cx="60" cy="60" r="54" fill="none" stroke="url(#gradient)"
+						stroke-width="3" />
+						<linearGradient spreadMethod="pad" id="gradient" x1="0%" y1="0%" x2="0%"
+						y2="100%">
 						<stop offset="0%" style="stop-color:rgb(165, 207, 229);stop-opacity:1;" />
 						<stop offset="22%" style="stop-color:rgb(212, 170, 182);stop-opacity:1;" />
 						<stop offset="56.99999999999999" style="stop-color:rgb(231, 209, 215);stop-opacity:1;" />
 						<stop offset="83" style="stop-color:rgba(245, 236, 238, 0);stop-opacity:0;" />
 						<stop offset="100%" style="stop-color:rgba(255, 255, 255, 0.97);stop-opacity:0.97;" />
 					</linearGradient>
-				</svg>
-
-
-				<div class="hero-info">
-					<h1 class="title hero-info__title">МАНИКЮРИСТ</h1>
-					<h2 class="sub-title hero-info__sub-title">Ваш персональный маникюрист предложит Вам ряд
-						профессиональных услуг, которые отлично дополнят Ваш наряд.</h2>
-					<button class="hero-info__button btn">Записаться</button>
+					</svg>
+	
+	
+					<div class="service-info">
+						<h1 class="service-info__title small-title">МАНИКЮРИСТ</h1>
+						<p class="service-info__description">Ваш персональный маникюрист предложит Вам ряд профессиональных услуг, которые отлично дополнят Ваш наряд.</p>
+	
+						<button class="service-info__order btn">Заказать</button>
+					</div>	
 				</div>
-			</div>
-
-			<div class="hero-circle">
-				<svg viewBox="0 0 120 120" class="hero-circle__progress">
-					<circle cx="60" cy="60" r="54" fill="none" stroke="url(#hero-circle__gradient2)" stroke-width="3" />
-					<linearGradient spreadMethod="pad" id="hero-circle__gradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+	
+				<div class="service service--scissors">
+					<svg viewBox="0 0 120 120" class="service__progress">
+						<circle cx="60" cy="60" r="54" fill="none" stroke="url(#gradient)"
+						stroke-width="3" />
+						<linearGradient spreadMethod="pad" id="gradient" x1="0%" y1="0%" x2="0%"
+						y2="100%">
 						<stop offset="0%" style="stop-color:rgb(165, 207, 229);stop-opacity:1;" />
 						<stop offset="22%" style="stop-color:rgb(212, 170, 182);stop-opacity:1;" />
 						<stop offset="56.99999999999999" style="stop-color:rgb(231, 209, 215);stop-opacity:1;" />
 						<stop offset="83" style="stop-color:rgba(245, 236, 238, 0);stop-opacity:0;" />
 						<stop offset="100%" style="stop-color:rgba(255, 255, 255, 0.97);stop-opacity:0.97;" />
 					</linearGradient>
-				</svg>
-
-
-				<div class="hero-info">
-					<h1 class="title hero-info__title">ПАРИКХМАХЕР</h1>
-					<h2 class="sub-title hero-info__sub-title">Ваш персональный маникюрист предложит Вам ряд
-						профессиональных услуг, которые отлично дополнят Ваш наряд.</h2>
-					<button class="hero-info__button btn">Записаться</button>
-				</div>
-			</div>
-
-
-			<div class="hero-clues">
-				<div class="mouse clue clue--pc hidden">
-					<div class="wheel"></div>
-				</div>
-
-
-				<div class="swipe clue clue--mobile hidden">
-					<img class="gif" src="img/decor/swipe.gif" alt="">
-				</div>
-			</div>
-
-			<div class="hero-decors">
-				<img src="img/decor/curve.svg" alt="" class="hero-decor hero-decor--1">
-				<img src="img/decor/curve.svg" alt="" class="hero-decor hero-decor--2">
-			</div>
-
-
-
-			<!-- 			<div class="hero-icons">
-				<div class="hero__decor hero__decor--1"><img src="img/decor/curve.svg" alt=""></div>
-				<div class="hero__decor hero__decor--2"><img src="img/decor/curve.svg" alt=""></div>
-
-				<div class="hero__scissor hero__icon visible" indexSlide="0"><svg version="1.1" id="_x32_"
-						xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-						viewBox="0 0 512 512" xml:space="preserve">
-						<path fill="#fff" stroke="#000"
-							d="M331.748,199.256l-11.189-11.189L501.365,7.261c-93.744,8.129-196.113,113.906-257.29,175.085l-18.395,67.113
-					   l-61.519,15.928c-3.827-13.034-10.907-25.388-21.139-35.606c-8.134-8.128-17.632-14.297-27.724-18.395
-					   c-15.18-6.138-31.662-7.672-47.503-4.604c-15.817,3.04-31.051,10.801-43.255,22.999c-8.143,8.149-14.326,17.638-18.409,27.739
-					   c-6.133,15.151-7.663,31.662-4.599,47.494c3.044,15.811,10.785,31.041,23.008,43.259c8.13,8.14,17.618,14.297,27.719,18.395
-					   c15.167,6.148,31.667,7.673,47.504,4.614c15.821-3.05,31.041-10.791,43.259-23.009c8.129-8.138,14.312-17.628,18.4-27.729
-					   c2.429-6.002,4.104-12.208,5.094-18.483l47.086-10.936l-10.921,47.125c-0.972,0.155-1.972,0.271-2.958,0.466
-					   c-15.812,3.039-31.056,10.781-43.249,22.999c-8.149,8.148-14.326,17.637-18.41,27.738c-6.133,15.152-7.673,31.662-4.599,47.494
-					   c3.04,15.812,10.786,31.041,23.009,43.259c8.124,8.139,17.618,14.297,27.714,18.395c15.161,6.138,31.672,7.673,47.494,4.604
-					   c15.836-3.039,31.054-10.78,43.272-22.999c8.13-8.138,14.317-17.618,18.405-27.719c6.134-15.161,7.659-31.681,4.604-47.512
-					   c-3.054-15.812-10.785-31.041-23.009-43.259c-8.133-8.13-17.632-14.297-27.728-18.395c-2.434-0.982-4.9-1.807-7.406-2.564
-					   l20.708-62.393l61.853-17.715C383.33,199.702,502.036,111.31,512,19.004L331.748,199.256z M122.068,296.505
-					   c-1.437,7.382-4.939,14.346-10.703,20.105c-3.851,3.846-8.221,6.662-12.898,8.586c-7.006,2.836-14.767,3.574-22.168,2.127
-					   c-7.38-1.447-14.32-4.954-20.109-10.703c-3.847-3.856-6.672-8.227-8.571-12.888c-2.842-7.022-3.574-14.782-2.132-22.183
-					   c1.442-7.382,4.953-14.326,10.712-20.105c3.852-3.856,8.207-6.662,12.884-8.566c7.011-2.856,14.792-3.574,22.168-2.146
-					   c7.395,1.447,14.335,4.953,20.118,10.712c3.836,3.866,6.658,8.217,8.561,12.898C122.787,281.344,123.515,289.105,122.068,296.505z
-						M243.297,393.377c3.842,3.865,6.663,8.216,8.562,12.897c2.86,7.003,3.583,14.763,2.146,22.164
-					   c-1.442,7.381-4.958,14.336-10.708,20.104c-3.856,3.847-8.216,6.672-12.897,8.586c-7.008,2.836-14.768,3.564-22.164,2.137
-					   c-7.386-1.457-14.332-4.964-20.12-10.713c-3.846-3.856-6.663-8.217-8.561-12.888c-2.846-7.022-3.58-14.782-2.137-22.182
-					   c1.442-7.382,4.939-14.336,10.708-20.105c3.856-3.856,8.197-6.664,12.883-8.567c7.018-2.855,14.787-3.593,22.178-2.136
-					   C230.579,384.111,237.519,387.618,243.297,393.377z M296.968,229.781c-5.856,5.867-15.35,5.847-21.202,0
-					   c-5.852-5.846-5.852-15.335,0.005-21.192c5.852-5.847,15.341-5.857,21.188,0C302.81,214.436,302.82,223.935,296.968,229.781z" />
 					</svg>
+	
+	
+					<div class="service-info">
+						<h1 class="service-info__title small-title">ПАРИКХМАХЕР</h1>
+						<p class="service-info__description">Ваш персональный парикхмахер предложит Вам ряд профессиональных услуг, которые отлично дополнят Ваш наряд.</p>
+	
+						<button class="service-info__order btn">Заказать</button>
+					</div>	
 				</div>
 
-				<div class="hero__brush hero__icon" indexSlide="1">
-					<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"
-						xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
-						class="iconify iconify--emojione-monotone" preserveAspectRatio="xMidYMid meet">
-						<path
-							d="M24.943 18.617c-2.467-1.287-4.875-1.716-6.395-.637c-1.074.765-1.549 2.19-1.572 3.914a27.446 27.446 0 0 1-5.961-8.421V2H6.434v11.477h.023C5.668 16.193 4.994 19.378 5 22.371c.008 6.04 4.738 9.08 8.586 9.08c.055 0 .105-.012.16-.013a6.234 6.234 0 0 0 1.891-.315l.035-.014c.631-.219 1.197-.537 1.648-.979c0 0-.668-.471-1.662-1.428c.623.045 1.305.03 1.986-.044c.521 2.462 1.648 5.097 2.545 6.313L39.883 62h4.809l-17.82-25.904c1.377-.031 2.707-.574 3.941-1.452c3.045-2.162 4.359-5.481.885-10.207a20.122 20.122 0 0 0-2.725-2.972c1.223.776 2.723 2.063 4.355 4.182C39.426 33.55 59 60.582 59 60.582v-3.545S41.092 32.383 34.977 24.455c-4.215-5.465-8.36-6.686-10.034-5.838M9.688 26.475c.99 2.5 5.072 3.688 5.072 3.688c-2.592 1.457-8.994-2.044-9.002-7.793c-.004-2.976.689-6.184 1.49-8.894h1.199c2.484 8.549 8.527 10.758 8.527 10.758c-2.556 0-5.555-.767-5.555-.767c2.539 2.907 7.945 3.485 7.945 3.485c-4.733 1.032-9.676-.477-9.676-.477m20.884-1.566c3.115 4.233 1.789 6.619.773 7.341c-1.014.721-.93-.781-4.045-5.016c-3.117-4.232-7.688-7.996-6.672-8.717c1.015-.719 6.829 2.159 9.944 6.392"
-							fill="#fff"></path>
-						<path
-							d="M56.346 23.214c.222.357 2.654 4.625 2.654 4.626v-4.199s-.666-1.096-.895-1.458c-2.637-4.215-6.115-6.534-8.189-6.647c-.471-.022-.828.07-1.092.2c-2.178-1.333-4.35-1.88-5.838-1c-1.756 1.038-2.178 3.823-1.674 6.91c-.641 2.661.717 7.541 1.84 9.374L59 56.05v-6.923l-9.502-16.508c1.283.057 2.564-.353 3.783-1.073c3.07-1.816 4.594-4.865 1.674-9.634a18.85 18.85 0 0 0-2.084-2.759c1.08.887 2.303 2.19 3.475 4.061m-2.364 6.099c-1.021.603-.818-.819-3.434-5.089c-2.617-4.271-6.652-8.21-5.631-8.814c1.023-.605 6.314 2.592 8.928 6.862c2.618 4.271 1.165 6.435.137 7.041"
-							fill="#fff"></path>
-						<path
-							d="M14.643 42.074l.014.018c-2.498-1.096-4.893-1.361-6.283-.201c-1.561 1.306-1.514 4.125-.506 7.091c-.188 2.728 1.957 7.321 3.369 8.95L14.533 62h5.383l-2.676-3.469c1.473-.021 2.848-.672 4.076-1.699c2.729-2.283 3.727-5.537.057-9.773c-.779-.9-1.695-1.75-2.674-2.514c1.205.689 2.691 1.82 4.27 3.579C25.996 51.498 34.984 62 34.984 62H37.6S27.567 50.209 24.522 46.818c-3.635-4.05-7.969-6.134-9.879-4.744m5.697 5.517c3.287 3.796 2.209 6.163 1.301 6.927c-.91.758-.945-.677-4.234-4.473c-3.287-3.796-7.92-7.035-7.014-7.798c.908-.761 6.658 1.55 9.947 5.344"
-							fill="#fff"></path>
-					</svg>
+
+				<div class="clues">
+					<div class="clue-mouse clue clue--pc hidden">
+						<div class="wheel"></div>
+					</div>
+
+
+					<div class="clue-swipe clue clue--mobile hidden">
+						<img class="gif" src="img/decor/swipe.gif" alt="">
+					</div>
 				</div>
-			</div> -->
-		</div>
-	</section>
 
-
-
-	<section class="advantages">
-		<img src="img/decor/curve.png" class="advantages__curve advantages__icon" alt="">
-
-		<div class="advantages__scissors advantages__icon">
-			<?xml version="1.0" encoding="utf-8"?>
-
-			<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-			<svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-				viewBox="0 0 512 512" xml:space="preserve">
-
-				<path class="st0"
-					d="M331.748,199.256l-11.189-11.189L501.365,7.261c-93.744,8.129-196.113,113.906-257.29,175.085l-18.395,67.113
-						l-61.519,15.928c-3.827-13.034-10.907-25.388-21.139-35.606c-8.134-8.128-17.632-14.297-27.724-18.395
-						c-15.18-6.138-31.662-7.672-47.503-4.604c-15.817,3.04-31.051,10.801-43.255,22.999c-8.143,8.149-14.326,17.638-18.409,27.739
-						c-6.133,15.151-7.663,31.662-4.599,47.494c3.044,15.811,10.785,31.041,23.008,43.259c8.13,8.14,17.618,14.297,27.719,18.395
-						c15.167,6.148,31.667,7.673,47.504,4.614c15.821-3.05,31.041-10.791,43.259-23.009c8.129-8.138,14.312-17.628,18.4-27.729
-						c2.429-6.002,4.104-12.208,5.094-18.483l47.086-10.936l-10.921,47.125c-0.972,0.155-1.972,0.271-2.958,0.466
-						c-15.812,3.039-31.056,10.781-43.249,22.999c-8.149,8.148-14.326,17.637-18.41,27.738c-6.133,15.152-7.673,31.662-4.599,47.494
-						c3.04,15.812,10.786,31.041,23.009,43.259c8.124,8.139,17.618,14.297,27.714,18.395c15.161,6.138,31.672,7.673,47.494,4.604
-						c15.836-3.039,31.054-10.78,43.272-22.999c8.13-8.138,14.317-17.618,18.405-27.719c6.134-15.161,7.659-31.681,4.604-47.512
-						c-3.054-15.812-10.785-31.041-23.009-43.259c-8.133-8.13-17.632-14.297-27.728-18.395c-2.434-0.982-4.9-1.807-7.406-2.564
-						l20.708-62.393l61.853-17.715C383.33,199.702,502.036,111.31,512,19.004L331.748,199.256z M122.068,296.505
-						c-1.437,7.382-4.939,14.346-10.703,20.105c-3.851,3.846-8.221,6.662-12.898,8.586c-7.006,2.836-14.767,3.574-22.168,2.127
-						c-7.38-1.447-14.32-4.954-20.109-10.703c-3.847-3.856-6.672-8.227-8.571-12.888c-2.842-7.022-3.574-14.782-2.132-22.183
-						c1.442-7.382,4.953-14.326,10.712-20.105c3.852-3.856,8.207-6.662,12.884-8.566c7.011-2.856,14.792-3.574,22.168-2.146
-						c7.395,1.447,14.335,4.953,20.118,10.712c3.836,3.866,6.658,8.217,8.561,12.898C122.787,281.344,123.515,289.105,122.068,296.505z
-						 M243.297,393.377c3.842,3.865,6.663,8.216,8.562,12.897c2.86,7.003,3.583,14.763,2.146,22.164
-						c-1.442,7.381-4.958,14.336-10.708,20.104c-3.856,3.847-8.216,6.672-12.897,8.586c-7.008,2.836-14.768,3.564-22.164,2.137
-						c-7.386-1.457-14.332-4.964-20.12-10.713c-3.846-3.856-6.663-8.217-8.561-12.888c-2.846-7.022-3.58-14.782-2.137-22.182
-						c1.442-7.382,4.939-14.336,10.708-20.105c3.856-3.856,8.197-6.664,12.883-8.567c7.018-2.855,14.787-3.593,22.178-2.136
-						C230.579,384.111,237.519,387.618,243.297,393.377z M296.968,229.781c-5.856,5.867-15.35,5.847-21.202,0
-						c-5.852-5.846-5.852-15.335,0.005-21.192c5.852-5.847,15.341-5.857,21.188,0C302.81,214.436,302.82,223.935,296.968,229.781z" />
-			</svg>
-		</div>
-
-		<div class="advantages__brush advantages__icon">
-			<?xml version="1.0" encoding="utf-8"?>
-			<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-				aria-hidden="true" role="img" class="iconify iconify--emojione-monotone"
-				preserveAspectRatio="xMidYMid meet">
-				<path
-					d="M24.943 18.617c-2.467-1.287-4.875-1.716-6.395-.637c-1.074.765-1.549 2.19-1.572 3.914a27.446 27.446 0 0 1-5.961-8.421V2H6.434v11.477h.023C5.668 16.193 4.994 19.378 5 22.371c.008 6.04 4.738 9.08 8.586 9.08c.055 0 .105-.012.16-.013a6.234 6.234 0 0 0 1.891-.315l.035-.014c.631-.219 1.197-.537 1.648-.979c0 0-.668-.471-1.662-1.428c.623.045 1.305.03 1.986-.044c.521 2.462 1.648 5.097 2.545 6.313L39.883 62h4.809l-17.82-25.904c1.377-.031 2.707-.574 3.941-1.452c3.045-2.162 4.359-5.481.885-10.207a20.122 20.122 0 0 0-2.725-2.972c1.223.776 2.723 2.063 4.355 4.182C39.426 33.55 59 60.582 59 60.582v-3.545S41.092 32.383 34.977 24.455c-4.215-5.465-8.36-6.686-10.034-5.838M9.688 26.475c.99 2.5 5.072 3.688 5.072 3.688c-2.592 1.457-8.994-2.044-9.002-7.793c-.004-2.976.689-6.184 1.49-8.894h1.199c2.484 8.549 8.527 10.758 8.527 10.758c-2.556 0-5.555-.767-5.555-.767c2.539 2.907 7.945 3.485 7.945 3.485c-4.733 1.032-9.676-.477-9.676-.477m20.884-1.566c3.115 4.233 1.789 6.619.773 7.341c-1.014.721-.93-.781-4.045-5.016c-3.117-4.232-7.688-7.996-6.672-8.717c1.015-.719 6.829 2.159 9.944 6.392"
-					fill="#000000"></path>
-				<path
-					d="M56.346 23.214c.222.357 2.654 4.625 2.654 4.626v-4.199s-.666-1.096-.895-1.458c-2.637-4.215-6.115-6.534-8.189-6.647c-.471-.022-.828.07-1.092.2c-2.178-1.333-4.35-1.88-5.838-1c-1.756 1.038-2.178 3.823-1.674 6.91c-.641 2.661.717 7.541 1.84 9.374L59 56.05v-6.923l-9.502-16.508c1.283.057 2.564-.353 3.783-1.073c3.07-1.816 4.594-4.865 1.674-9.634a18.85 18.85 0 0 0-2.084-2.759c1.08.887 2.303 2.19 3.475 4.061m-2.364 6.099c-1.021.603-.818-.819-3.434-5.089c-2.617-4.271-6.652-8.21-5.631-8.814c1.023-.605 6.314 2.592 8.928 6.862c2.618 4.271 1.165 6.435.137 7.041"
-					fill="#000000"></path>
-				<path
-					d="M14.643 42.074l.014.018c-2.498-1.096-4.893-1.361-6.283-.201c-1.561 1.306-1.514 4.125-.506 7.091c-.188 2.728 1.957 7.321 3.369 8.95L14.533 62h5.383l-2.676-3.469c1.473-.021 2.848-.672 4.076-1.699c2.729-2.283 3.727-5.537.057-9.773c-.779-.9-1.695-1.75-2.674-2.514c1.205.689 2.691 1.82 4.27 3.579C25.996 51.498 34.984 62 34.984 62H37.6S27.567 50.209 24.522 46.818c-3.635-4.05-7.969-6.134-9.879-4.744m5.697 5.517c3.287 3.796 2.209 6.163 1.301 6.927c-.91.758-.945-.677-4.234-4.473c-3.287-3.796-7.92-7.035-7.014-7.798c.908-.761 6.658 1.55 9.947 5.344"
-					fill="#000000"></path>
-			</svg>
-		</div>
-
-		<div class="advantages__demo mb-5 mb-sm-7">
-			<div class="square square--left d-none d-md-flex">
-				<div class="square__mark">
-					<img src="img/decor/mark.png" alt="">
+				<div class="services__icons">
+					<img src="img/decor/curve.png" alt="" class="services__icon services__curve services__curve--1">
+					<img src="img/decor/curve.png" alt="" class="services__icon services__curve services__curve--2">
 				</div>
 			</div>
-
-			<h1 class="title advantages__title fs-1">Наши <br> преймущества</h1>
-
-			<div class="square square--right d-none d-md-flex">
-				<div class="square__mark">
-					<img src="img/decor/mark.png" alt="">
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row flex-column flex-lg-row align-items-center justify-content-between mb-6">
-				<div class="col-10 col-lg-5 d-flex align-items-center gap-5">
-					<div class="advantages__number fs-big">1</div>
-					<div class="advantages__arrowIcon">
-						<svg viewBox="0 0 288 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M285.958 32.8284C287.52 31.2663 287.52 28.7337 285.958 27.1716L260.502 1.71573C258.94 0.153632 256.407 0.153632 254.845 1.71573C253.283 3.27783 253.283 5.81049 254.845 7.37258L277.472 30L254.845 52.6274C253.283 54.1895 253.283 56.7222 254.845 58.2843C256.407 59.8464 258.94 59.8464 260.502 58.2843L285.958 32.8284ZM0 34L283.129 34V26L0 26L0 34Z"
-								fill="white" />
-						</svg>
-					</div>
-				</div>
+		</section>
 
 
-				<div class="col-10 col-lg-5 mt-5">
-					<div class="advantages__text fs-2 text-center text-lg-end">
-						Наш салон красоты предлагает широкий выбор услуг!
-					</div>
-				</div>
-			</div>
-
-			<div class="row flex-column flex-lg-row-reverse align-items-center justify-content-between  mb-6">
-				<div class="col-10 col-lg-5 d-flex flex-row-reverse align-items-center gap-5">
-					<div class="advantages__number fs-big">2</div>
-					<div class="advantages__arrowIcon">
-						<svg viewBox="0 0 324 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M1.18526 27.1716C-0.38443 28.7337 -0.39674 31.2663 1.15776 32.8284L26.4899 58.2839C28.0444 59.846 30.577 59.846 32.1467 58.2839C33.7164 56.7219 33.7287 54.1892 32.1742 52.6272L9.65679 30L32.3942 7.37285C33.9639 5.81077 33.9762 3.27814 32.4217 1.71606C30.8672 0.153982 28.3345 0.153982 26.7648 1.71606L1.18526 27.1716ZM323.419 26L4.01938 26L3.9805 34L323.38 34L323.419 26Z"
-								fill="white" />
-						</svg>
-
-					</div>
-				</div>
-
-
-				<div class="col-10 col-lg-5 mt-5">
-					<div class="advantages__text fs-2 text-center text-lg-start">
-						Наш салон красоты предлагает широкий выбор услуг!
-					</div>
-				</div>
-			</div>
-
-			<div class="row flex-column flex-lg-row align-items-center justify-content-between mb-6">
-				<div class="col-10 col-lg-5 d-flex align-items-center gap-5">
-					<div class="advantages__number fs-big">3</div>
-					<div class="advantages__arrowIcon">
-						<svg viewBox="0 0 288 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M285.958 32.8284C287.52 31.2663 287.52 28.7337 285.958 27.1716L260.502 1.71573C258.94 0.153632 256.407 0.153632 254.845 1.71573C253.283 3.27783 253.283 5.81049 254.845 7.37258L277.472 30L254.845 52.6274C253.283 54.1895 253.283 56.7222 254.845 58.2843C256.407 59.8464 258.94 59.8464 260.502 58.2843L285.958 32.8284ZM0 34L283.129 34V26L0 26L0 34Z"
-								fill="white" />
-						</svg>
-					</div>
-				</div>
-
-
-				<div class="col-10 col-lg-5 mt-5">
-					<div class="advantages__text fs-2 text-center text-lg-end">
-						Наш салон красоты предлагает широкий выбор услуг!
-					</div>
-				</div>
-			</div>
-
-			<div class="row flex-column flex-lg-row-reverse align-items-center justify-content-between  mb-6">
-				<div class="col-10 col-lg-5 d-flex flex-row-reverse align-items-center gap-5">
-					<div class="advantages__number fs-big">4</div>
-					<div class="advantages__arrowIcon">
-						<svg viewBox="0 0 324 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M1.18526 27.1716C-0.38443 28.7337 -0.39674 31.2663 1.15776 32.8284L26.4899 58.2839C28.0444 59.846 30.577 59.846 32.1467 58.2839C33.7164 56.7219 33.7287 54.1892 32.1742 52.6272L9.65679 30L32.3942 7.37285C33.9639 5.81077 33.9762 3.27814 32.4217 1.71606C30.8672 0.153982 28.3345 0.153982 26.7648 1.71606L1.18526 27.1716ZM323.419 26L4.01938 26L3.9805 34L323.38 34L323.419 26Z"
-								fill="white" />
-						</svg>
-
-					</div>
-				</div>
-
-
-				<div class="col-10 col-lg-5 mt-5">
-					<div class="advantages__text fs-2 text-center text-lg-start">
-						Наш салон красоты предлагает широкий выбор услуг!
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-
-
-	<section class="reviews">
-		<div class="container">
-			<div class="row justify-content-between gy-6 gx-5 gx-lg-0">
-				<div class="col-12 col-md-6 col-lg-5">
-					<div class="review">
-						<div class="review__image">
-							<img src="img/logo.png" alt="">
+		<section class="advantages">
+			<div class="container">
+				<div class="advantages-title">
+					<div class="row d-flex align-items-center">
+						<div class="col-3 d-none d-lg-block">
+							<img class="advantages-title__square" src="img/mark.png" alt="mark">
 						</div>
 
-						<p class="review__text">Loprewopjfwpifjwifjewifjpwifjsdjfsdf sfgepjhgerpjherh</p>
-						<h1 class="review__name">- Человек Человек</h1>
-					</div>
-				</div>
-				<div class="col-12 col-md-6 col-lg-5">
-					<div class="review review--reverse">
-						<div class="review__image">
-							<img src="img/logo.png" alt="">
+						<div class="col">
+							<div class="advantages-title__title">
+								<h1 class="title">Наши <br> преймущества</h1>
+							</div>
 						</div>
 
-						<p class="review__text">Loprewopjfwpifjwifjewifjpwifjsdjfsdf sfgepjhgerpjherh</p>
-						<h1 class="review__name">- Человек Человек</h1>
+						<div class="col-3 d-none d-lg-block">
+							<img clas src="img/mark.png" class="advantages-title__square advantages-title__square--right" alt="mark">
+						</div>
+					</div>
+				</div>
+
+
+				<div class="advantages__items d-flex flex-column">
+					<div class="advantage">
+						<div class="row flex-column flex-lg-row justify-content-between align-items-center">
+							<div class="col-10 col-lg-5">
+								<div class="advantage-left d-flex justify-content-center justify-content-lg-start align-items-center">
+									<span class="advantage-left__number">1</span>
+									<div class="advantage-left__arrow">
+										<img src="img/arrow-right.png" alt="arrow-right">
+									</div>
+								</div>
+							</div>
+
+							<div class="col-10 col-lg-5">
+								<div class="advantage-right">
+									<p class="advantage-right__text text-center text-lg-end">Наш салон красоты предлагает широкий выбор услуг!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="advantage">
+						<div class="row flex-column-reverse flex-lg-row justify-content-between align-items-center">
+							<div class="col-10 col-lg-5">
+								<div class="advantage-right">
+									<p class="advantage-right__text text-center text-lg-start">Наш салон красоты предлагает широкий выбор услуг!</p>
+								</div>
+							</div>
+
+							<div class="col-10 col-lg-5">
+								<div class="advantage-left d-flex justify-content-center justify-content-lg-end align-items-center">
+									<div class="advantage-left__arrow advantage-left__arrow--left">
+										<img src="img/arrow-left.png" alt="arrow-left">
+									</div>
+									<span class="advantage-left__number">2</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="advantage">
+						<div class="row flex-column flex-lg-row justify-content-between align-items-center">
+							<div class="col-10 col-lg-5">
+								<div class="advantage-left d-flex justify-content-center justify-content-lg-start align-items-center">
+									<span class="advantage-left__number">3</span>
+									<div class="advantage-left__arrow">
+										<img src="img/arrow-right.png" alt="arrow-right">
+									</div>
+								</div>
+							</div>
+
+							<div class="col-10 col-lg-5">
+								<div class="advantage-right">
+									<p class="advantage-right__text text-center text-lg-end">Наш салон красоты предлагает широкий выбор услуг!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="advantage">
+						<div class="row flex-column-reverse flex-lg-row justify-content-between align-items-center">
+							<div class="col-10 col-lg-5">
+								<div class="advantage-right">
+									<p class="advantage-right__text text-center text-lg-start">Наш салон красоты предлагает широкий выбор услуг!</p>
+								</div>
+							</div>
+
+							<div class="col-10 col-lg-5">
+								<div class="advantage-left d-flex justify-content-center justify-content-lg-end align-items-center">
+									<div class="advantage-left__arrow advantage-left__arrow--left">
+										<img src="img/arrow-left.png" alt="arrow-left">
+									</div>
+									<span class="advantage-left__number">4</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+
+
+		<section class="reviews">
+			<div class="container">
+				<h1 class="reviews__title title">Что говорят наши клиенты</h1>
+
+				<div class="reviews-items">
+					<div class="row justify-content-center">
+						<div class="col-12 col-lg-5">
+							<div class="review d-flex flex-column justify-content-end">
+								<div class="review__image">
+									<img src="img/logo.png" alt="avatar">
+								</div>
+		
+								<p class="review__text  sub-title">Loprewopjfwpifjwifjewifjpwifjsdjfsdf sfgepjhgerpjherh</p>
+								<h1 class="review__name title">- Человек Человек</h1>
+							</div>
+						</div>
+
+						<div class="col-12 col-lg-5">
+							<div class="review review--reverse d-flex flex-column justify-content-end">
+								<div class="review__image">
+									<img src="img/logo.png" alt="avatar">
+								</div>
+		
+								<p class="review__text  sub-title">Loprewopjfwpifjwifjewifjpwifjsdjfsdf sfgepjhgerpjherh</p>
+								<h1 class="review__name title">- Человек Человек</h1>
+							</div>
+						</div>
+
+						<div class="col-12 col-lg-5">
+							<div class="review d-flex flex-column justify-content-end">
+								<div class="review__image">
+									<img src="img/logo.png" alt="avatar">
+								</div>
+		
+								<p class="review__text  sub-title">Loprewopjfwpifjwifjewifjpwifjsdjfsdf sfgepjhgerpjherh</p>
+								<h1 class="review__name title">- Человек Человек</h1>
+							</div>
+						</div>
+
+						<div class="col-12 col-lg-5">
+							<div class="review review--reverse d-flex flex-column justify-content-end">
+								<div class="review__image">
+									<img src="img/logo.png" alt="avatar">
+								</div>
+		
+								<p class="review__text  sub-title">Loprewopjfwpifjwifjewifjpwifjsdjfsdf sfgepjhgerpjherh</p>
+								<h1 class="review__name title">- Человек Человек</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="order">
+			<div class="container">
+				<div class="row flex-column justify-content-between flex-lg-row">
+					<div class="col-lg-5 col-12">
+						<div class="order-left d-flex flex-column">
+							<h1 class="order-left__title title">Запишитесь к нам</h1>
+							<form class="order-form d-flex flex-column flex-grow-1">
+								<input type="text" name="name"
+									class="order-form__input order-form__input--name order__input"
+									placeholder="Ваше имя">
+								<input type="tel" name="tel"
+									class="order-form__input order-form__input--tel order__input"
+									placeholder="Ваш номер телефона">
+
+
+								<textarea style="resize: none;" name="message"
+									class="order-form__input order-form__input--message order__input"
+									placeholder="Чем мы можем вам помочь?"></textarea>
+							</form>
+
+							<button class="order__btn btn btn--color">Отправить</button>
+						</div>
+					</div>
+
+					<div class="col-lg-5 col-12">
+						<div class="order-right d-flex flex-column">
+							<div class="order-specialists">
+								<h1 class="order-right__title text-start text-lg-start">Выберите специалиста</h1>
+								<div class="order-specialists-items d-flex justify-content-start">
+									<div class="order-specialist" specialist_name="маникюрист">
+										<img src="img/logo.png" alt="specialist #1">
+									</div>
+	
+									<div class="order-specialist" specialist_name="парикхмахер">
+										<img src="img/logo.png" alt="specialist #2">
+									</div>
+								</div>
+							</div>
+	
+							<div class="order-selectTime">
+								<h1 class="order-right__title text-start text-lg-start">Выберите нужное время</h1>
+								<div id="color-calendar" class="order-selectTime__calendar"></div>
+	
+								<div data-offer class="order-selectTime__inputs">
+									<input type="text" class="order-selectTime__time order__input" name="time"
+									placeholder="Желаемое время">
+
+									<textarea class="order-selectTime__time order__input order-selectTime__time--error hidden"></textarea>	
+									<div class="order-selectTime__offer hidden"></div>
+								</div>
+							</div>
+						</div>
+					</div>					
+				</div>
+			</div>
+		</section>
+	</main>
+
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-2 col-sm-3 col-md-5">
+					<div class="logo d-flex align-items-center">
+						<div class="logo__image">
+							<img src="img/logo.png" alt="Логотип">
+						</div>
+						<h1 class="logo__name d-none d-md-block">ПАРИКХМАХЕР & <br>МАНИКЮРИСТ</h1>
+					</div>
+				</div>
+
+				<div class="col-8 col-md-5 ms-auto">
+					<div class="contacts text-end">
+						<a href="tel:79900000000" class="tel">+79900000000</a>
+						<address class="address">г. Мелитополь, Фрунзе 269.</address>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
-
+	</footer>
 
 
 
 	<script src="js/jquery-3.6.0.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/underscore@latest/underscore-umd-min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-		crossorigin="anonymous"></script>
-	<script src="js/circle.js"></script>
-	<script src="js/clues.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/color-calendar/dist/bundle.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script src="js/debounce.js"></script>
+	<script src="js/services.js"></script>
 	<script src="js/header.js"></script>
+	<script src="js/record.js"></script>
+	<script src="js/clues.js"></script>
 </body>
-
 </html>

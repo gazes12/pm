@@ -1,10 +1,10 @@
-let hero = $('.hero');
+let services = $('.services');
 let header = $('.header');
 
 $(window).scroll(function(){
     let scrollPos = $(window).scrollTop();
     
-    if(scrollPos > hero.offset().top){
+    if(scrollPos > services.offset().top){
         $('.header').addClass('sticky');
     }else{
         $('.header').removeClass('sticky');
