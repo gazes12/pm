@@ -1,14 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
-html, body {
-  height: 100%;
-  width: 100%;
-}
-
 body {
   font-family: "Montserrat", sans-serif;
-  background: #000;
   color: #fff;
   line-height: 1.5;
+  background: #000;
 }
 
 @media (min-width: 1400px) {
@@ -22,6 +17,10 @@ section {
 
 img {
   max-width: 100%;
+}
+
+input, textarea, button {
+  all: unset;
 }
 
 .title {
@@ -43,8 +42,6 @@ img {
   background: transparent;
   font-size: clamp(0.656rem, 0.5428rem + 0.6469vw, 1.125rem);
   padding: clamp(0.208rem, 0.1827rem + 0.1448vw, 0.313rem) clamp(1.875rem, 1.6486rem + 1.2938vw, 2.813rem);
-  /* 	padding: clamp(0.188rem, 0.1578rem + 0.1724vw, 0.313rem) clamp(2.1875rem, 2.0365rem + 0.8628vw, 2.813rem);
-  	font-size: clamp(0.75rem, 0.7198rem + 0.1724vw, 0.875rem); */
 }
 
 .tel {
@@ -129,22 +126,27 @@ img {
 }
 
 .services {
-  background-image: url("../img/fon.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 100% 100%;
+  /* 		background-image: url('../img/fon.jpg');
+  		background-repeat: no-repeat;
+  		background-position: center center;
+  		background-size: 100% 100%;
+
+
+
+
+  		&::after{
+  			content: '';
+  			position: absolute;
+  			top: 0;
+  			left: 0;
+  			width: 100%;
+  			height: 100%;
+  			background: #000;
+  			opacity: 0.9;
+  		} */
   height: 100vh;
   padding: 0;
-}
-.services::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  opacity: 0.9;
+  padding-top: clamp(0rem, -3.0172rem + 17.2414vw, 12.5rem);
 }
 
 .services__wrapper {
@@ -414,7 +416,6 @@ img {
   top: -20%;
   left: -10%;
   border-radius: 100px;
-  overflow: hidden;
   width: clamp(4.9rem, 2.1877rem + 8.7066vw, 11.143rem);
   height: clamp(4.9rem, 2.1877rem + 8.7066vw, 11.143rem);
 }
@@ -423,6 +424,9 @@ img {
     top: -10%;
     left: -3%;
   }
+}
+.review__image img {
+  border-radius: 100%;
 }
 
 .review__text {
@@ -604,6 +608,111 @@ img {
   white-space: pre-wrap;
 }
 
+.cards {
+  margin-top: clamp(12.5rem, 10.2993rem + 9.3897vw, 18.75rem);
+}
+
+.card {
+  background: transparent;
+  border-color: transparent;
+  position: relative;
+  background-image: url("../img/fon.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 15% 0;
+}
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.9;
+}
+.card .container {
+  z-index: 1000;
+  height: 100% !important;
+  position: relative;
+}
+
+.card__decor {
+  background: linear-gradient(315deg, #E0C3CB, #A7CEE3);
+  width: clamp(12vh, 20vw, 25vh);
+  height: clamp(12vh, 20vw, 25vh);
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.card__decor img {
+  width: 50%;
+}
+
+.card-content__title {
+  margin-bottom: clamp(2.917rem, 2.4036rem + 2.1904vw, 4.375rem);
+  color: #fff;
+}
+
+.card-content__price {
+  font-size: clamp(1.188rem, 1.0825rem + 0.6028vw, 1.625rem);
+  font-weight: 600;
+  background: linear-gradient(315deg, #E0C3CB, #A7CEE3);
+  color: #fff;
+  border-radius: 30px;
+  padding: clamp(0.625rem, 0.5494rem + 0.4317vw, 0.938rem) clamp(1.25rem, 1.0991rem + 0.8621vw, 1.875rem);
+}
+
+.card-bottom {
+  margin-top: clamp(5rem, 4.1197rem + 3.7559vw, 7.5rem);
+}
+
+.card-gallery .row {
+  -webkit-column-gap: 0px;
+     -moz-column-gap: 0px;
+          column-gap: 0px;
+  row-gap: 30px;
+}
+
+.card-gallery__image {
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.card-gallery__image:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.card-gallery__image img {
+  border-radius: 30px;
+}
+
+.card__order {
+  margin-top: clamp(3.333rem, 2.746rem + 2.5044vw, 5rem);
+  margin-bottom: clamp(3.333rem, 2.746rem + 2.5044vw, 5rem);
+  margin-right: clamp(1.666rem, 1.3723rem + 1.253vw, 2.5rem);
+}
+@media (max-width: 768px) {
+  .card__order {
+    margin-right: 0px;
+  }
+}
+
+/* 	.card__order{
+		margin-top: 60px;
+		@media(min-width: 768px){
+			margin-right: 60px;
+			margin-top: 0;
+		}
+	} */
 .footer {
   padding: clamp(6.25rem, 5.4957rem + 4.3103vw, 9.375rem) 0 clamp(2.916rem, 2.5638rem + 2.0124vw, 4.375rem) 0;
 }
